@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    tools:context="com.eclev.lawrence.essencia.SetUpAccountActivity">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="User Profile Setup"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/ib_profile_pix"
+        android:layout_below="@+id/tv_header"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/et_user_profile_name"
+        android:layout_marginTop="8dp"
+        android:hint="Name"
+        android:layout_below="@+id/ib_profile_pix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_userProfile_setup"
+        android:text="Save Details"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

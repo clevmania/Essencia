@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eclev.lawrence.essencia.BlogPostActivity">
+
+
+
+    <ImageButton
+        android:id="@+id/ib_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/add_blog_img"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+
+    <EditText
+        android:id="@+id/etBlogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/ib_select_image"
+        android:background="@drawable/edittext_outline"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/etBlogDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Description"
+        android:layout_below="@+id/etBlogTitle"
+        android:padding="15dp"
+        android:background="@drawable/edittext_outline"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:text="Post It"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
